@@ -10,6 +10,15 @@
     --contact-color: rgba(255, 255, 255, 0.6);
     --background-dark-color: #2F303A;
 }
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after
+*::before {
+    box-sizing: inherit;
+}
 
 body {
     background-color: var(--primary-background-color);
@@ -25,6 +34,13 @@ body {
 }
 
 /* logo */
+.header-container {
+    outline: 2px solid red;
+}
+
+.header-nav {
+    outline: 2px solid blue
+}
 
 .logo {
     font-family: Raleway, sans-serif;
@@ -45,6 +61,8 @@ body {
 
 
 .accent {color:var(--logo-color)}
+
+
 
 .logo:hover {
     color: var(--logo-color);
@@ -73,11 +91,18 @@ body {
 
 .site-nav {
     text-decoration: none;
+    }
+.site-nav .nav-item,
+.auth-nav .nav-item {
+    display: inline-block;
 }
+  
 
 .site-nav .link.current {
     color: var(--logo-color);
 }
+
+
 /* адрес */
 
 
@@ -96,10 +121,13 @@ body {
 .auth-nav .link:focus {
     color: var(--logo-color);}
 
+
+
 /* Герой */
 
 .hero {
     background-color: var(--background-dark-color);
+    
 }
 
 .hero-title {
@@ -108,16 +136,16 @@ body {
         font-weight: 900;
         font-size: 44px;
         line-height: 1.36;
-        /* or 136% */
+        
     
-        text-align: center;
+        
         text-transform: uppercase;
         color: var(--primary-white-color);
 }
 
 /* Логічні заголовоки */
 
-.navigation,
+
 
 .feature {
     color: var(--primary-background-color)
@@ -141,7 +169,7 @@ body {
     line-height: 1.87;
     color: var(--primary-text-color);
     background-color: var(--primary-button-background);
-    }
+   }
 
 .hero-button:hover,
 .hero-button:focus { 
@@ -216,6 +244,8 @@ background-color: var(--logo-color);
 }
 
 
+
+
 /* Наша команда */
 
 
@@ -238,7 +268,7 @@ background-color: var(--logo-color);
     background-color: var(--background-dark-color);
 }
 
-address {font-style: inherit;
+.address-list {font-style: inherit;
 }
 
 
@@ -266,7 +296,8 @@ address {font-style: inherit;
 .contact:focus {
         color: var(--logo-color);
     }
-    
+
+ 
 
     
 
