@@ -9,6 +9,8 @@
     --primary-button-background: #F5F4FA;
     --contact-color: rgba(255, 255, 255, 0.6);
     --background-dark-color: #2F303A;
+    --border-color:#EEEEEE;
+    --border-header: #ECECEC;
 }
 html {
     box-sizing: border-box;
@@ -44,19 +46,21 @@ ul {
 
 /* logo */
 .header-container {
-    /* outline: 2px solid red; */
+    
     display: flex;
-    width: 1200px;
-    margin-left: 215px;
+    width: 1570px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
     align-items: center;
-    /* text-align: center; */
+    border-bottom: 1px solid var(--border-header);
+    
    
     
 }
 
 .site-nav .nav-item {
-    /* outline: 2px solid green; */
-    /* display: flex; */
     margin-right: 50px;
     }
 
@@ -66,7 +70,7 @@ ul {
 
 .header-nav {
     display: flex;
-    /* outline: 2px solid blue */
+    
 }
 
 .logo {
@@ -76,8 +80,6 @@ ul {
     font-size: 26px;
     line-height: 1.2;
     text-decoration: none;
-    /* display: flex; */
-    /* outline: 2px solid gray; */
     margin-right: 93px;
     margin-top: 24px;
     margin-bottom: 25px;
@@ -125,7 +127,6 @@ ul {
     display: flex;
     text-decoration: none;
     padding-left: 0;
-    /* margin-right: 344px; */
     align-items: center;
     }
 
@@ -140,7 +141,6 @@ ul {
 
 .auth-nav {
     display: flex;
-    /* outline: 2px solid goldenrod; */
     margin-left: 344px;
     padding-left: 0;
     
@@ -148,7 +148,7 @@ ul {
 
 
 .auth-nav .nav-item {
-    /* display: flex; */
+    
     margin-right: 50px;
     
 }
@@ -182,6 +182,8 @@ ul {
     background-color: var(--background-dark-color);
     display: flex;
     width: 1600px;
+    margin-right: auto;
+    margin-left: auto
     
 }
 
@@ -193,20 +195,14 @@ ul {
         line-height: 1.36;
         text-transform: uppercase;
         color: var(--primary-white-color);
-        /* display: flex; */
-        margin-right: auto; 
-        margin-left: auto;
         padding-top: 200px;
         padding-bottom: 30px;
-        /* align-items: center; */
         width: 700px;
-        /* margin: 0; */
+        
 
 }
 
 .hero-container {
-    /* width: 1170px; */
-    /* outline: 2px solid red; */
     text-align: center;
     margin-right: auto;
     margin-left: auto;
@@ -235,6 +231,7 @@ ul {
     background-color: var(--primary-button-background);
     margin-bottom: 200px;
     border-radius: 4px;
+    border: none;
     width: 216px;
     height: 50px;
    }
@@ -274,7 +271,6 @@ background-color: var(--logo-color);
 
 .feature {
     display: none;
-    /* outline: 2px solid blue; */
     width: 1600px;
     color: var(--primary-background-color)
 }
@@ -282,11 +278,11 @@ background-color: var(--logo-color);
     display: flex;
     padding: 0;
     justify-content: flex-start;
-
+    
 }
 
 .feature-item {
-    /* outline: 2px solid green; */
+    
     display: inline-block;
     text-align: left;
     width: 270px;
@@ -318,13 +314,13 @@ background-color: var(--logo-color);
 
 .feature-container {
     display: flex;
-    width: 1200px;
-    /* outline: 2px solid red; */
+    width: 1170px;
+        padding-left: 15px;
+        padding-right: 15px;
     text-align: center;
-    /* margin: 0; */
     margin-top: 94px;
-    margin-left: 215px;
-    margin-right: 215px;
+    margin-left: auto;
+    margin-right: auto;
     
 }    
     
@@ -338,15 +334,19 @@ background-color: var(--logo-color);
     }
 
 .work-container {
-    /* outline: 2px solid blue; */
+    
+    
     margin-top: 94px;
-    width: 1200px;
-    margin-left: 215px;
+    width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 94px;
 }    
 
 .work {
-    /* outline: 2px solid green; */
+    width: 1600px;
     display: flex;
     margin-top: 50px;
     padding: 0;
@@ -381,24 +381,23 @@ background-color: var(--logo-color);
 /* Наша команда */
 
 .team-section {
-    /* outline: 2px solid green; */
+    
     width: 1600px;
-    /* margin-left: 215px; */
+    margin-left: auto;
+    margin-right: auto;
     background-color: var(--primary-button-background);
+    
 }
 
-.team-container {
-    /* outline: 6px solid red; */
-    /* padding-bottom: 124px; */
-}
+
 
 .team-container .section-title {
-    /* outline: 2px solid red; */
+    
     padding-top: 94px;
 }
 
 .team {
-    /* outline: 2px solid blue; */
+    
     display: flex;
     margin-left: 215px;
     padding-left: 0;
@@ -442,13 +441,18 @@ background-color: var(--logo-color);
 .footer {
     background-color: var(--background-dark-color);
     width: 1600px;
-    /* margin-top: 124px; */
+    margin-left: auto;
+    margin-right: auto;
+    
 }
 
 .footer-container {
-    /* outline: 2px solid red; */
-    width: 1200px;
-    margin-left: 215px;
+
+    width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px; 
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 60px
 
 }
@@ -508,6 +512,76 @@ background-color: var(--logo-color);
 .contact:focus {
         color: var(--logo-color);
     }
+
+
+    /*  ПОРТФОЛІО  */
+.navigation {
+    display:none;
+}   
+
+.nav-container {
+    width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+}
+
+.nav-button {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    padding-top: 94px;
+}
+
+.secondary-button {
+    
+     padding: 0;
+     margin-right: 8px;
+     border-radius: 4px;
+     border:none;
+     width: 125px;
+     height: 38px;
+    background-color:  var(--primary-button-background);
+}
+
+
+.example-container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;   
+    margin-right: auto;
+    padding-bottom: 94px;
+}
+
+.work-example {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.example-item {
+    width: 370px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    border: 1px solid var(--border-color)
+    
+}
+.example-item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.example-item:nth-last-child(-n+3) {
+    margin-bottom: 0;
+}
+
+.example-card {
+border: 1px solid var(--border-color)
+}
+
+
+
+
 
  
 
