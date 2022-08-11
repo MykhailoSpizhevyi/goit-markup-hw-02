@@ -24,9 +24,18 @@ body {
     background-color: var(--primary-background-color);
     color:var(--primary-text-color);
     font-family: Roboto, sans-serif;
-    
-    
-    
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0;
 }
 
 .list {
@@ -35,11 +44,29 @@ body {
 
 /* logo */
 .header-container {
-    outline: 2px solid red;
+    /* outline: 2px solid red; */
+    display: flex;
+    width: 1200px;
+    margin-left: 215px;
+    align-items: center;
+    /* text-align: center; */
+   
+    
+}
+
+.site-nav .nav-item {
+    /* outline: 2px solid green; */
+    /* display: flex; */
+    margin-right: 50px;
+    }
+
+.site-nav .nav-item:last-child {
+    margin-right: 0;
 }
 
 .header-nav {
-    outline: 2px solid blue
+    display: flex;
+    /* outline: 2px solid blue */
 }
 
 .logo {
@@ -49,7 +76,12 @@ body {
     font-size: 26px;
     line-height: 1.2;
     text-decoration: none;
-    }
+    /* display: flex; */
+    /* outline: 2px solid gray; */
+    margin-right: 93px;
+    margin-top: 24px;
+    margin-bottom: 25px;
+}
 
 .footer-logo .logo {font-family: Raleway, sans-serif;
     color: var(--primary-white-color);
@@ -90,12 +122,13 @@ body {
 
 
 .site-nav {
+    display: flex;
     text-decoration: none;
+    padding-left: 0;
+    /* margin-right: 344px; */
+    align-items: center;
     }
-.site-nav .nav-item,
-.auth-nav .nav-item {
-    display: inline-block;
-}
+
   
 
 .site-nav .link.current {
@@ -104,6 +137,26 @@ body {
 
 
 /* адрес */
+
+.auth-nav {
+    display: flex;
+    /* outline: 2px solid goldenrod; */
+    margin-left: 344px;
+    padding-left: 0;
+    
+}
+
+
+.auth-nav .nav-item {
+    /* display: flex; */
+    margin-right: 50px;
+    
+}
+
+.auth-nav .nav-item:last-child {
+    margin-right: 0;
+}
+
 
 
 .auth-nav .link {
@@ -127,6 +180,8 @@ body {
 
 .hero {
     background-color: var(--background-dark-color);
+    display: flex;
+    width: 1600px;
     
 }
 
@@ -136,20 +191,29 @@ body {
         font-weight: 900;
         font-size: 44px;
         line-height: 1.36;
-        
-    
-        
         text-transform: uppercase;
         color: var(--primary-white-color);
+        /* display: flex; */
+        margin-right: auto; 
+        margin-left: auto;
+        padding-top: 200px;
+        padding-bottom: 30px;
+        /* align-items: center; */
+        width: 700px;
+        /* margin: 0; */
+
 }
 
-/* Логічні заголовоки */
-
-
-
-.feature {
-    color: var(--primary-background-color)
+.hero-container {
+    /* width: 1170px; */
+    /* outline: 2px solid red; */
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
 }
+
+
+
 
 /* Cursor pointer для кнопок */
 
@@ -169,6 +233,10 @@ body {
     line-height: 1.87;
     color: var(--primary-text-color);
     background-color: var(--primary-button-background);
+    margin-bottom: 200px;
+    border-radius: 4px;
+    width: 216px;
+    height: 50px;
    }
 
 .hero-button:hover,
@@ -204,19 +272,61 @@ background-color: var(--logo-color);
 /* Переваги */
 
 
+.feature {
+    display: none;
+    /* outline: 2px solid blue; */
+    width: 1600px;
+    color: var(--primary-background-color)
+}
+.feature-menu {
+    display: flex;
+    padding: 0;
+    justify-content: flex-start;
 
-.feature .title {
+}
+
+.feature-item {
+    /* outline: 2px solid green; */
+    display: inline-block;
+    text-align: left;
+    width: 270px;
+    margin-right: 30px;
+}
+
+.feature-item:last-child {
+    margin-right: 0;
+}
+
+
+.feature-menu .title {
     
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
     color: var(--primary-text-color);
+    padding-bottom: 10px;
 }
 
-.feature .text {font-size: 14px;
+.feature-menu .text {font-size: 14px;
     line-height: 1.71;
-    color: var(--primary-gray-text)}
+    color: var(--primary-gray-text);
+    
+    }
+
+
+
+.feature-container {
+    display: flex;
+    width: 1200px;
+    /* outline: 2px solid red; */
+    text-align: center;
+    /* margin: 0; */
+    margin-top: 94px;
+    margin-left: 215px;
+    margin-right: 215px;
+    
+}    
     
 
 .section-title {
@@ -224,8 +334,30 @@ background-color: var(--logo-color);
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
+
     }
 
+.work-container {
+    /* outline: 2px solid blue; */
+    margin-top: 94px;
+    width: 1200px;
+    margin-left: 215px;
+    margin-bottom: 94px;
+}    
+
+.work {
+    /* outline: 2px solid green; */
+    display: flex;
+    margin-top: 50px;
+    padding: 0;
+}
+
+.work .work-item {
+    margin-right: 30px;
+}
+.work .work-item:last-child {
+    margin-right: 0;
+}
 /* Приклади роботи */
 
 
@@ -248,6 +380,49 @@ background-color: var(--logo-color);
 
 /* Наша команда */
 
+.team-section {
+    /* outline: 2px solid green; */
+    width: 1600px;
+    /* margin-left: 215px; */
+    background-color: var(--primary-button-background);
+}
+
+.team-container {
+    /* outline: 6px solid red; */
+    /* padding-bottom: 124px; */
+}
+
+.team-container .section-title {
+    /* outline: 2px solid red; */
+    padding-top: 94px;
+}
+
+.team {
+    /* outline: 2px solid blue; */
+    display: flex;
+    margin-left: 215px;
+    padding-left: 0;
+    margin-top: 50px;
+
+}
+
+.team-item {
+    margin-right: 30px;
+}
+.team-item:last-child {
+    margin-right: 0;
+}
+
+.team-item .title {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.team-item .text {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 124px;
+}
 
 
 .team .title {
@@ -266,10 +441,47 @@ background-color: var(--logo-color);
 /* Футер адреса */
 .footer {
     background-color: var(--background-dark-color);
+    width: 1600px;
+    /* margin-top: 124px; */
 }
 
-.address-list {font-style: inherit;
+.footer-container {
+    /* outline: 2px solid red; */
+    width: 1200px;
+    margin-left: 215px;
+    padding-top: 60px
+
 }
+
+
+
+
+
+.address-list {
+    display: flex;
+    font-style: inherit;
+}
+
+.address-contact {
+    /* outline: 2px solid salmon; */
+    margin-top: 24px;
+    display: inline-block;
+    padding-left: 0;
+}
+
+.address-contact .contact-item {
+    margin-top: 9px;
+}
+
+.address-contact .contact-item:first-child {
+    margin-top: 0;
+}
+
+.address-contact .contact-item:last-child {
+    margin-bottom: 60px;
+}
+
+
 
 
 .contact-map {
