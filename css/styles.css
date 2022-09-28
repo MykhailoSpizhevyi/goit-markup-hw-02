@@ -5,7 +5,7 @@
     --logo-color:#2196F3;
     --primary-white-color: #FFFFFF;
     --primary-gray-text: #757575;
-    --primary-background-color: #f5f5f5;
+    --primary-background-color: #F5F5F5;
     --primary-button-background: #F5F4FA;
     --contact-color: rgba(255, 255, 255, 0.6);
     --background-dark-color: #2F303A;
@@ -23,7 +23,7 @@ html {
 }
 
 body {
-    background-color: var(--primary-background-color);
+    background-color: var(--primary-white-color);
     color:var(--primary-text-color);
     font-family: Roboto, sans-serif;
     margin: 0;
@@ -48,9 +48,9 @@ ul {
 .header-container {
     
     display: flex;
-    width: 1170px;
-    padding-left: 15px;
-    padding-right: 15px;
+    width: 1600px;
+    /* padding-left: 15px;
+    padding-right: 15px; */
     margin-left: auto;
     margin-right: auto;
     align-items: center;
@@ -80,6 +80,7 @@ ul {
     font-size: 26px;
     line-height: 1.2;
     text-decoration: none;
+    margin-left: 215px;
     margin-right: 93px;
     margin-top: 24px;
     margin-bottom: 25px;
@@ -99,7 +100,7 @@ ul {
 
 
 .logo:hover {
-    color: var(--logo-color);
+    color: ;
 }
 /* навігація */
 
@@ -227,8 +228,8 @@ ul {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
-    color: var(--primary-text-color);
-    background-color: var(--primary-button-background);
+    color: var(--primary-white-color);
+    background-color: var(--logo-color);
     margin-bottom: 200px;
     border-radius: 4px;
     border: none;
@@ -238,8 +239,7 @@ ul {
 
 .hero-button:hover,
 .hero-button:focus { 
-color: var(--primary-white-color);
-background-color: var(--logo-color);
+color: var(--title-text-color);
 } 
 
 
@@ -366,6 +366,7 @@ background-color: var(--logo-color);
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
+    margin-bottom: 4px;
     
 }
 
@@ -386,6 +387,7 @@ background-color: var(--logo-color);
     margin-left: auto;
     margin-right: auto;
     background-color: var(--primary-button-background);
+    padding-bottom: 94px;
     
 }
 
@@ -394,6 +396,7 @@ background-color: var(--logo-color);
 .team-container .section-title {
     
     padding-top: 94px;
+    
 }
 
 .team {
@@ -407,6 +410,7 @@ background-color: var(--logo-color);
 
 .team-item {
     margin-right: 30px;
+    border: 1px solid var(--border-color);
 }
 .team-item:last-child {
     margin-right: 0;
@@ -414,13 +418,13 @@ background-color: var(--logo-color);
 
 .team-item .title {
     text-align: center;
-    padding-top: 30px;
+    margin-bottom: 10px;
+    
 }
 
 .team-item .text {
     text-align: center;
-    padding-top: 10px;
-    padding-bottom: 124px;
+    
 }
 
 
@@ -436,6 +440,13 @@ background-color: var(--logo-color);
     font-size: 16px;
     line-height: 1.18;
     }
+
+
+    
+.block {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}    
     
 /* Футер адреса */
 .footer {
@@ -541,7 +552,7 @@ background-color: var(--logo-color);
      border:none;
      width: 125px;
      height: 38px;
-    background-color:  var(--primary-button-background);
+    background-color: var(--primary-button-background);
 }
 
 
@@ -576,7 +587,12 @@ background-color: var(--logo-color);
 }
 
 .example-card {
-border: 1px solid var(--border-color)
+border: 1px solid var(--border-color);
+padding-left: 24px;
+padding-right: 24px;
+padding-top: 20px;
+padding-bottom: 20px;
+
 }
 
 
